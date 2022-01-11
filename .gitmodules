@@ -5,7 +5,7 @@
 [submodule "deps/libuvc-theta-sample"]
 	path = deps/libuvc-theta-sample
 	url = https://github.com/madjxatw/libuvc-theta-sample.git
-	branch = nvdec-yv12
+	branch = master
 [submodule "deps/v4l2loopback"]
 	path = deps/v4l2loopback
 	url = https://github.com/umlaeute/v4l2loopback.git

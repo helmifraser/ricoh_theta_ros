@@ -7,4 +7,5 @@
     <remap from="cv_camera/image_raw" to="theta_cam/image_raw"/>
     <remap from="cv_camera/camera_info" to="theta_cam/camera_info"/>
   </node>
+    <node name="republish" type="republish" pkg="image_transport" output="screen" args="raw in:=/theta_cam/image_raw compressed out:=/theta_cam/image_compressed" />
 </launch>
