@@ -1,10 +1,10 @@
 <!-- launch nodes for RICOH THETA camera -->
 <launch>
   <arg name="device_id" default="2"/>
-  <node name="360cam" pkg="cv_camera" type="cv_camera_node"
+  <node name="theta_cam" pkg="cv_camera" type="cv_camera_node"
     respawn="false" output="screen" clear_params="true">
     <param name="device_id" value="$(arg device_id)"/>
-    <remap from="cv_camera/image_raw" to="360cam/image_raw"/>
-    <remap from="cv_camera/camera_info" to="360cam/camera_info"/>
+    <remap from="cv_camera/image_raw" to="theta_cam/image_raw"/>
+    <remap from="cv_camera/camera_info" to="theta_cam/camera_info"/>
   </node>
 </launch>
